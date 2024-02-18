@@ -81,7 +81,7 @@ For **_v2land-sails-pg-session_** use following sample, navigate to your GIT fol
 mkdir sails_pg_session_v2
 cd sails_pg_session_v2
 git clone https://github.com/v2land/sails-pg-session.git .
-npm update
+pnpm update
 psql electron_release_server_sessions < ./sql/sails-pg-session-support.sql postgres
 ```
 
@@ -90,7 +90,7 @@ If you use **_sails-pg-session_** then follow next sample, navigate to your GIT 
 mkdir sails_pg_session
 cd sails_pg_session
 git clone https://github.com/ravitej91/sails-pg-session.git .
-npm update
+pnpm update
 psql electron_release_server_sessions < ./sql/sails-pg-session-support.sql postgres
 ```
 
@@ -114,5 +114,5 @@ The migration framework being used is [db-migrate](https://www.npmjs.com/package
 work you will need to copy `database.json.template` to `database.json` and then change the applicable settings to
 match your database setup.
 
-To use these migration scripts you can run `npm run migrate up` to apply the changes to your database. You also have
-the option to undo the changes by running `npm run migrate down`.
+To use these migration scripts you can run `pnpm run migrate up` to apply the changes to your database. You also have
+the option to undo the changes by running `pnpm run migrate down`.

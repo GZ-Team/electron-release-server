@@ -13,7 +13,7 @@ module.exports.globals = {
   /****************************************************************************
   *                                                                           *
   * Expose the lodash installed in Sails core as a global variable. If this   *
-  * is disabled, like any other node module you can always run npm install    *
+  * is disabled, like any other node module you can always run pnpm install    *
   * lodash --save, then var _ = require('lodash') at the top of any file.     *
   *                                                                           *
   ****************************************************************************/
@@ -23,7 +23,7 @@ module.exports.globals = {
   /****************************************************************************
   *                                                                           *
   * Expose the async installed in Sails core as a global variable. If this is *
-  * disabled, like any other node module you can always run npm install async *
+  * disabled, like any other node module you can always run pnpm install async *
   * --save, then var async = require('async') at the top of any file.         *
   *                                                                           *
   ****************************************************************************/

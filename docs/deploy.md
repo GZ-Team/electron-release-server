@@ -7,7 +7,7 @@ Electron Release Server can be easily be deployed to your own server.
 Install dependencies using:
 
 ```
-npm install
+pnpm install
 ```
 
 **Action Step:** You need to configure database ([database setup guide](database.md)) and must create a `config/local.js` file, which contains the configuration options required to run the server.
@@ -21,7 +21,7 @@ vim config/local.js
 Then start the application using:
 
 ```
-npm start
+pnpm start
 ```
 
 Browse to `http://localhost:1337/`
@@ -68,7 +68,7 @@ See the [Sails deployment documentation](http://sailsjs.org/documentation/concep
 
 To start the server in deployment mode use:
 ```
-npm start --prod
+pnpm start --prod
 ```
 
 > Note: In production you should use a process manager such as [pm2](http://pm2.keymetrics.io/)

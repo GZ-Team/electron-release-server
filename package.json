@@ -3,6 +3,18 @@
   "private": true,
   "version": "2.1.3",
   "description": "A version server for hosting and serving the your electron desktop app releases.",
+  "main": "app.js",
+  "author": "Demana Team",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "inspect": "node --inspect app.js",
+    "start": "node app.js",
+    "migrate": "db-migrate",
+    "postinstall": "bower install",
+    "eslint": "eslint ./*.js api assets/js config migrations tasks",
+    "stylelint": "stylelint assets/styles/*.*"
+  },
   "dependencies": {
     "@sailshq/upgrade": "^1.0.9",
     "async": "^3.2.4",
@@ -44,21 +56,6 @@
     "url": "^0.11.0",
     "v2land-sails-pg-session": "^1.0.4"
   },
-  "scripts": {
-    "inspect": "node --inspect app.js",
-    "start": "node app.js",
-    "migrate": "db-migrate",
-    "postinstall": "bower install",
-    "eslint": "eslint ./*.js api assets/js config migrations tasks",
-    "stylelint": "stylelint assets/styles/*.*"
-  },
-  "main": "app.js",
-  "author": {
-    "name": "Arek Sredzki",
-    "email": "arek@sredzki.com",
-    "url": "https://arek.io/"
-  },
-  "license": "MIT",
   "devDependencies": {
     "eslint": "^8.30.0",
     "stylelint": "^14.16.0",
